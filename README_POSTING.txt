@@ -3,7 +3,7 @@ Facebook Post Package
 Files:
 - index.html: the page people click.
 - og-preview.png: the normal Facebook preview image.
-- full-note.png: the huge horizontally scrollable notebook image.
+- full-note.png: the huge vertically scrollable notebook image.
 
 How to post:
 1. Paste this public page URL into Facebook:
@@ -15,4 +15,4 @@ How to post:
 
 Important:
 - Do not upload full-note.png directly to Facebook if you want the normal preview card.
-- Post the page URL. Facebook will show og-preview.png, and the click opens full-note.png in a sideways scroll page.
+- Post the page URL. Facebook will show og-preview.png, and the click opens full-note.png in a tall scrolling page.
