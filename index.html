@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Note That Keeps Going</title>
+
+    <meta property="og:title" content="A note that keeps going" />
+    <meta property="og:description" content="Click to keep reading sideways." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thecameronboyer-beep.github.io/facebook-long-note-post/" />
+    <meta property="og:image" content="https://thecameronboyer-beep.github.io/facebook-long-note-post/og-preview.png" />
+    <meta property="og:image:secure_url" content="https://thecameronboyer-beep.github.io/facebook-long-note-post/og-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A notebook page with a handwritten note cut off at the right edge." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A note that keeps going" />
+    <meta name="twitter:description" content="Click to keep reading sideways." />
+    <meta name="twitter:image" content="https://thecameronboyer-beep.github.io/facebook-long-note-post/og-preview.png" />
+
+    <link rel="preload" href="./full-note.png" as="image" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #111012;
+      }
+
+      body {
+        overflow: hidden;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .scroll-stage {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        background:
+          linear-gradient(rgba(248, 230, 194, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(248, 230, 194, 0.035) 1px, transparent 1px),
+          #0d0c0e;
+        background-size: 22px 22px;
+        scrollbar-color: #d7bd73 #171519;
+        scrollbar-width: thin;
+      }
+
+      .note-image {
+        display: block;
+        width: auto;
+        height: 100vh;
+        max-width: none;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+
+      .hint {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        padding: 9px 12px;
+        border: 1px solid rgba(248, 230, 194, 0.18);
+        border-radius: 999px;
+        background: rgba(17, 16, 18, 0.76);
+        color: #f7efe0;
+        font-size: 0.82rem;
+        font-weight: 800;
+        pointer-events: none;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.34);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="scroll-stage" aria-label="Horizontally scrollable notebook note">
+      <img
+        class="note-image"
+        src="./full-note.png"
+        alt="A very long notebook page with one handwritten line continuing far to the right."
+      />
+    </main>
+    <div class="hint" aria-hidden="true">Scroll sideways</div>
+  </body>
+</html>
